@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transit.control.DepartureVisionController">
+   <children>
+      <Text fill="#241b69" layoutX="36.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DepartureVision" textAlignment="CENTER" wrappingWidth="398.3805847167969">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ListView fx:id="departurelist" layoutX="9.0" layoutY="169.0" prefHeight="400.0" prefWidth="452.0" />
+      <TextField fx:id="departurename" layoutX="12.0" layoutY="63.0" prefHeight="38.0" prefWidth="446.0" text="Search">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Text fill="#21218c" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Stations" wrappingWidth="471.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
