@@ -1,0 +1,20 @@
+7879,1,Trenton,09:57
+7879,2,Hamilton,10:11
+7879,3,Princton Junction,10:18
+7879,4,New Brunswick,10:31
+7879,5,Edison,10:36
+7879,6,Metuchen,10:41
+7879,7,Metro Park,10:45
+7879,8,Newark Airport,11:00
+7879,9,Newark Penn Station,11:07
+7879,10,New York Penn Station,11:20
+7847,10,New York Penn Station,01:55
+7847,9,Newark Penn Station,02:04
+7847,8,Newark Airport,02:13
+7847,7,Metro Park,02:20
+7847,6,Metuchen,02:33
+7847,5,Edison,02:38
+7847,4,New Brunswick,02:43
+7847,3,Princton Junction,02:47
+7847,2,Hamilton,03:05
+7847,1,Trenton,03:12

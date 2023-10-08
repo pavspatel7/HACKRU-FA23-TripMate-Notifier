@@ -2,9 +2,53 @@
 
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TransitPanel.control.HomeAlertController">
    <children>
-      <HBox fx:id="alertPanel" layoutY="352.0" prefHeight="194.0" prefWidth="471.0" />
+      <HBox fx:id="alertPanel" layoutX="16.0" layoutY="401.0" prefHeight="130.0" prefWidth="438.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="194.0" prefWidth="246.0">
+               <children>
+                  <Text fx:id="trainNo" strokeType="OUTSIDE" strokeWidth="0.0" text="  # Train No: ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="nextStop" strokeType="OUTSIDE" strokeWidth="0.0" text="  # Next Stop: ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="lastStop" strokeType="OUTSIDE" strokeWidth="0.0" text="  # Last Stop: ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="eta" strokeType="OUTSIDE" strokeWidth="0.0" text="  # ETA:" wrappingWidth="237.0755615234375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children></HBox>
+      <Text fx:id="time" layoutX="144.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" textAlignment="CENTER" wrappingWidth="182.93670654296875">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Text>
+      <Text layoutX="145.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NJ Transit" textAlignment="CENTER" wrappingWidth="182.93670654296875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="162.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sunday, Oct 8">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

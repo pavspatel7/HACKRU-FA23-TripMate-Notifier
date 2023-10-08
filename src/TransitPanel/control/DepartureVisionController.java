@@ -25,18 +25,28 @@ public class DepartureVisionController {
     private TextField departurename;
 
 	public void start() {
-		// TODO Auto-generated method stub
 		departures = FXCollections.observableArrayList();
 		departurelist.setItems(departures);
 		
-		
-		
 		TransitData data = TransitData.getInstance();
 		departures.addAll(data.getStations().stream().collect(Collectors.toList()));
-		/*
+		
 		departurelist.setCellFactory(lv ->
     	{
-    	    ListCell<String> cell = new ListCell<>();
+    	    ListCell<String> cell = new ListCell<>()
+    	    {
+    	    protected void updateItem(String item, boolean empty)
+            {
+	    		super.updateItem(item, empty);
+                if(empty || item == null)
+                {
+                    setText(null);
+                    setGraphic(null);
+                }
+                else
+                	setText(item);
+            }
+	    };
     	    
     	    cell.setOnMouseClicked(event ->
     	    {
@@ -44,11 +54,12 @@ public class DepartureVisionController {
     	        {
     	            try
     	            {
+    	            	String aNm = departurelist.getSelectionModel().getSelectedItem();
     	            	FXMLLoader loader = new FXMLLoader(getClass().getResource("../view/Destination.fxml"));
     	                Parent destination = loader.load();
     	                DestinationController controller = loader.getController();
     	                Scene destinationScene = new Scene(destination);
-    	                controller.start();
+    	                controller.start(aNm);
     	                Stage mainStage = (Stage) departurelist.getScene().getWindow();
     	                mainStage.setScene(destinationScene);
     	            }
@@ -60,10 +71,6 @@ public class DepartureVisionController {
     	    });
     	    return cell;
     	});
-		*/
 		
 	}
-	
-	
-
 }
