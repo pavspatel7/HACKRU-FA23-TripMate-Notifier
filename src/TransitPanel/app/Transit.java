@@ -1,11 +1,11 @@
-package transit.app;
+package TransitPanel.app;
 	
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
-import transit.control.DepartureVisionController;
+import TransitPanel.control.DepartureVisionController;
 
 public class Transit extends Application
 {

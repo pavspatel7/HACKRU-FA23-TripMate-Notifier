@@ -1,4 +1,4 @@
-package transit.control;
+package TransitPanel.control;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
