@@ -6,6 +6,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import TransitPanel.control.DepartureVisionController;
+import TransitPanel.control.TransitData;
 
 public class Transit extends Application
 {
@@ -14,6 +15,7 @@ public class Transit extends Application
 	{
 		try
 		{
+			TransitData.readFromAFile();
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(getClass().getResource("../view/DepartureVision.fxml"));
 			primaryStage.setTitle("Transit");
