@@ -1,4 +1,4 @@
-# HACKRU-FA23
+# HACKRU-FA23 - Hackathon Project Rutgers University - New Brunswick
 ## Inspiration
 During my daily summer commute with the NJ Transit Rail, I noticed a significant issue. If you close the app after checking Schedules or DepartureVision and then depart from a train, it becomes challenging to access current trip updates. This caused problems for me and fellow commuters. Many passengers would either take quick naps or be unfamiliar with the route, leading them to ask about the next stop or their final station.
 
