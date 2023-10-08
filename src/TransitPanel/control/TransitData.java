@@ -36,37 +36,31 @@ public class TransitData {
 	public static TransitData readFromAFile() throws IOException
 	{
 		TransitData data = TransitData.getInstance();
-		File file = new File("TransitData.txt");
-		//file.createNewFile();
-		try
+		File file = new File("src/TransitPanel/control/TransitDataMy.txt");
+		file.createNewFile();
+		Map<Integer, List<String>> dataMap = new HashMap<Integer, List<String>>();
+		Set<String> stations = new HashSet<String>();
+		Scanner sc = new Scanner(file);
+		while(sc.hasNextLine()) 
 		{
-				Map<Integer, List<String>> dataMap = new HashMap<Integer, List<String>>();
-				Scanner sc = new Scanner(file);
-				while(sc.hasNextLine()) 
-				{
-					String dataLine = sc.nextLine();
-					String[] inputs = dataLine.split(",");
-					List<String> temp;
-					System.out.println("RU HERE");
-					dataLine = dataLine.substring(dataLine.indexOf(',')+1);
-					if(dataMap.keySet().contains(inputs[0].trim())) {
-						temp = new ArrayList<String>(dataMap.get(inputs[0].trim()));
-					}
-					else
-						temp = new ArrayList<String>();
-					
-					temp.add(dataLine);
-					dataMap.put(Integer.valueOf(inputs[0]), temp);
-				}
-				System.out.println(dataMap);
-				data.dataMap = dataMap;
-				sc.close();
+			String dataLine = sc.nextLine();
+			String[] inputs = dataLine.split(",");
+			List<String> temp;
+			dataLine = dataLine.substring(dataLine.indexOf(',')+1);
+			stations.add(inputs[2]);
+			if(dataMap.keySet().contains(Integer.valueOf(inputs[0].trim()))) {
+				temp = new ArrayList<String>(dataMap.get(Integer.valueOf(inputs[0].trim())));
+			}
+			else
+				temp = new ArrayList<String>();
+			
+			temp.add(dataLine);
+			dataMap.put(Integer.valueOf(inputs[0].trim()), temp);
 		}
-		catch(Exception e)
-		{
-	        e.printStackTrace();
-	    }
-		
+		data.dataMap = dataMap;
+		System.out.println(dataMap);
+		data.stations = stations;
+		sc.close();
 		return data;
 	}
 	

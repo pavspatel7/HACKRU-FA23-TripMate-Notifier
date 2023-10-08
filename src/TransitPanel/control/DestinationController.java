@@ -12,4 +12,9 @@ public class DestinationController {
     @FXML
     private TextField destinationName;
 
+	public void start() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
