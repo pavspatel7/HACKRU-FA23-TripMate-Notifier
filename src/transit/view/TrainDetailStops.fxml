@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transit.control.TrainController">
+   <children>
+      <Text fill="#191169" layoutX="36.0" layoutY="46.0" stroke="#bf2109" strokeType="OUTSIDE" strokeWidth="0.0" text="Stops" textAlignment="CENTER" wrappingWidth="398.3805847167969">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ListView fx:id="trainList" layoutX="9.0" layoutY="238.0" prefHeight="270.0" prefWidth="452.0" />
+      <Text fill="#191169" layoutX="44.0" layoutY="184.0" stroke="#bf2109" strokeType="OUTSIDE" strokeWidth="0.0" text="STOP                                                      TIME" textAlignment="CENTER" wrappingWidth="398.3805847167969">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#191169" layoutX="71.0" layoutY="86.0" stroke="#bf2109" strokeType="OUTSIDE" strokeWidth="0.0" text="ETA for NEC Train #7860 to Penn Station New York" textAlignment="CENTER" wrappingWidth="327.1805114746094">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
