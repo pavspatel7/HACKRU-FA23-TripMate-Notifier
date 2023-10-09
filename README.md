@@ -13,6 +13,3 @@ Our major challenge was analyzing the data and cleaning it up to extract meaning
 
 ## What we learned
 We learned different approaches to solving problems or problems that were solved previously using data. We learned how data analysis is crucial for innovation in every field.
-
-## What's next for TripMate Notifier
-We would like to test our idea in real-time and solve issues that we might face. Finally, host the notification panel/widget feature on the official NJ Transit application.
